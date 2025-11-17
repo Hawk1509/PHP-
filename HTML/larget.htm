@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            function bigg(a,b,c){
+                let max = a;
+                if (b>max){
+                   max = b; 
+                }
+                if (c>max){
+                    max = c;
+                }
+                return max;
+            }
+            let n1 = prompt("Enter Number: ");
+            let n2 = prompt("Enter Number: ");
+            let n3 = prompt("Enter Number: ");
+
+            let big = bigg(n1,n2,n3);
+            document.write("Biggest number is: " + big);
+        </script>
+    </body>
+</html>

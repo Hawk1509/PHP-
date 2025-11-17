@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Table</title>
+</head>
+<body>
+
+<table border="2" cellpadding="8">
+    <tr>
+        <th>Number</th>
+        <th>Factorial</th>
+    </tr>
+
+    <?php
+        // Function to calculate factorial
+        function fact($n){
+            $f = 1;
+            for($i = 1; $i <= $n; $i++){
+                $f = $f * $i;
+            }
+            return $f;
+        }
+
+        // Display factorials from 1 to 10
+        for($num = 1; $num <= 10; $num++){
+            echo "<tr>";
+            echo "<td>$num</td>";
+            echo "<td>" . fact($num) . "</td>";
+            echo "</tr>";
+        }
+    ?>
+</table>
+
+</body>
+</html>
